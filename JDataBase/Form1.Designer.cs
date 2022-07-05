@@ -101,7 +101,6 @@
             this.loadDatabaseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loadDatabaseFromOnlineToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.startNewDatabaseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialogPDFSave = new System.Windows.Forms.SaveFileDialog();
@@ -892,8 +891,7 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.saveLoadToolStripMenuItem,
-            this.helpToolStripMenuItem});
+            this.saveLoadToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1189, 24);
@@ -938,13 +936,6 @@
             this.startNewDatabaseToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
             this.startNewDatabaseToolStripMenuItem.Text = "Start New Database";
             this.startNewDatabaseToolStripMenuItem.Click += new System.EventHandler(this.startNewDatabaseToolStripMenuItem_Click);
-            // 
-            // helpToolStripMenuItem
-            // 
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(119, 20);
-            this.helpToolStripMenuItem.Text = "Open Help Manual";
-            this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
             // 
             // saveFileDialog1
             // 
@@ -1036,7 +1027,6 @@
         private TableLayoutPanel tableLayoutPanel2;
         private Button buttonAddMember;
         private Button buttonDeleteMember;
-        private ToolStripMenuItem helpToolStripMenuItem;
         private TabPage tabPagePrint;
         private CheckedListBox checkedListBoxPrint;
         private Button buttonDeselectAll;
