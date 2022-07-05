@@ -1,0 +1,110 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="assets\BouncyCastle.Crypto.dll" />
+    <None Remove="assets\Ccr.PresentationCore.dll" />
+    <None Remove="assets\Ccr.Std.Core.dll" />
+    <None Remove="assets\Ccr.Std.Introspective.dll" />
+    <None Remove="assets\Ccr.WinCore.dll" />
+    <None Remove="assets\EntityFramework.dll" />
+    <None Remove="assets\EntityFramework.SqlServer.dll" />
+    <None Remove="assets\itextsharp.dll" />
+    <None Remove="assets\JDataBase.deps.json" />
+    <None Remove="assets\JDataBase.dll" />
+    <None Remove="assets\JDataBase.pdb" />
+    <None Remove="assets\JDataBase.runtimeconfig.json" />
+    <None Remove="assets\JetBrains.Annotations.dll" />
+    <None Remove="assets\Microsoft.WindowsAPICodePack.dll" />
+    <None Remove="assets\Microsoft.WindowsAPICodePack.Shell.dll" />
+    <None Remove="assets\Npgsql.dll" />
+    <None Remove="assets\programfiles.txt" />
+    <None Remove="assets\System.Data.SqlClient.dll" />
+    <None Remove="assets\System.Data.SQLite.dll" />
+    <None Remove="assets\System.Data.SQLite.EF6.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="assets\BouncyCastle.Crypto.dll" />
+    <EmbeddedResource Include="assets\Ccr.PresentationCore.dll" />
+    <EmbeddedResource Include="assets\Ccr.Std.Core.dll" />
+    <EmbeddedResource Include="assets\Ccr.Std.Introspective.dll" />
+    <EmbeddedResource Include="assets\Ccr.WinCore.dll" />
+    <EmbeddedResource Include="assets\EntityFramework.dll" />
+    <EmbeddedResource Include="assets\EntityFramework.SqlServer.dll" />
+    <EmbeddedResource Include="assets\itextsharp.dll" />
+    <EmbeddedResource Include="assets\JDataBase.deps.json" />
+    <EmbeddedResource Include="assets\JDataBase.dll" />
+    <EmbeddedResource Include="assets\JDataBase.pdb" />
+    <EmbeddedResource Include="assets\JDataBase.runtimeconfig.json" />
+    <EmbeddedResource Include="assets\JetBrains.Annotations.dll" />
+    <EmbeddedResource Include="assets\Microsoft.WindowsAPICodePack.dll" />
+    <EmbeddedResource Include="assets\Microsoft.WindowsAPICodePack.Shell.dll" />
+    <EmbeddedResource Include="assets\Npgsql.dll" />
+    <EmbeddedResource Include="assets\programfiles.txt" />
+    <EmbeddedResource Include="assets\System.Data.SqlClient.dll" />
+    <EmbeddedResource Include="assets\System.Data.SQLite.dll" />
+    <EmbeddedResource Include="assets\System.Data.SQLite.EF6.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\net6.0-windows\BouncyCastle - Copy.Crypto.dll" />
+    <None Include="bin\Debug\net6.0-windows\Ccr.WinCore.dll" />
+    <None Include="bin\Debug\net6.0-windows\programfiles.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\net6.0-windows\programfiles.zip" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Ccr.PresentationCore" Version="4.0.0" />
+    <PackageReference Include="Costura.Fody" Version="5.7.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Fody" Version="6.6.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="iTextSharp" Version="5.5.13.3" />
+    <PackageReference Include="Npgsql" Version="6.0.5" />
+    <PackageReference Include="PresentationFramework" Version="4.6.0" />
+    <PackageReference Include="System.Data.SQLite" Version="1.0.116" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>
